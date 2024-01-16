@@ -1,0 +1,20 @@
+import turtle as t
+t.bgcolor('black')
+t.tracer(5)
+t.pensize(1)
+c=['yellow','white']
+for i in range(1500):
+    t.color(c[i%2])
+    t.up()
+    t.fd(i)
+    t.down()
+    t.rt(452)
+    for k in range(5):
+        t.fd(k*5)
+        t.lt(190)
+        for j in range(6):
+            t.fd(j*8)
+            t.up()
+            t.down()
+            t.rt(7)
+t.done()
